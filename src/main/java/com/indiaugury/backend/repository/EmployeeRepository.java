@@ -1,2 +1,7 @@
-package com.indiaugury.backend.repository;public interface EmployeeRepository {
+package com.indiaugury.backend.repository;
+
+import com.indiaugury.backend.model.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeRepository extends JpaRepository<Employee,Long> {
 }
